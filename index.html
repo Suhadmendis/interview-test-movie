@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="_css/style_home.css">
+    <link rel="stylesheet" href="_css/checkbox.css">
+
+    
+</head>
+<body>
+<div id="app">
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="_img/logo/Logo White.svg" alt="">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OUR SCREENS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SCHEDULE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOCATION & CONTACT</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="hero-image">
+          
+      </div>
+
+      <div id="topic-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="topic-head-text">
+                        MOVIE LIBRARY
+                    </h1>
+            
+                    <p class="topic-sub-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="cyf-section">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="com-head-text">
+                        Collect your favourites
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="custom-input cyf-input" placeholder="Search title and add to grid"  v-model="makeQuery">
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-4" v-for="movie in MOVIES">
+                    <div class="movie-card">
+                        <div class="movie-image-box">
+                            <img :src="movie.image" class="movie-image" alt="">
+                        </div>
+                        <div class="movie-info-box">
+                            <p class="movie-title">
+                                {{ movie.title }}
+                            </p>
+                            <p class="movie-description" v-html="truncate(movie.description, 90, '...')">
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+      </div>
+
+      <div id="contact-section">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="com-head-text">
+                        How to reach us
+                    </p>
+                    <p class="com-description-text">
+                        Lorem ipsum dolor sit amet, consetetur.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                  
+                  <div class="contact-info">
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            <label for="" class="contact-label">First Name*</label>
+                            <input type="text" class="custom-input contact-input">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="" class="contact-label">Last Name*</label>
+                            <input type="text" class="custom-input contact-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="" class="contact-label">Email*</label>
+                            <input type="text" class="custom-input contact-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="" class="contact-label">Telephone</label>
+                            <input type="text" class="custom-input contact-input">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="" class="contact-label">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" class="custom-input contact-input"></textarea>
+                            <label for="" class="contact-label">* required fields</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="container-check">
+                            I agree to the <u><b>Terms & Conditions</b></u>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                      
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="button-pallet">
+                                <button class="custom-btn contact-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <div id="map"></div>
+
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div id="footer-top-section">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                    <p class="footer-top-text">IT Group</p>
+                    <br>
+                    <p class="footer-top-text">C. Salvador de Madariaga, 1</p>
+                    <p class="footer-top-text">28027 Madrid</p>
+                    <p class="footer-top-text">Spain</p>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="follow-pallet">
+                        <p class="follow-us-text right-text">
+                            Follow us on
+                        </p>
+                        <img src="_img/icon/Twitter White.svg" alt="" class="footer-icon">
+                        <img src="_img/icon/Youtube White.svg" alt="" class="footer-icon">
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <hr>
+      
+      <div id="footer-bottom-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="footer-bottom-text left-text">
+                            Copyright © 2022 IT Hotels. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-bottom-text right-text">
+                            Photos by <u>Felix Mooneeram</u> & <u>Serge Kutuzov</u> on <u>Unsplash</u>
+                        </p>
+                    </div>
+                </div>
+            </div>
+      </div>
+</div>
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClBKRU9iKfSLnXVTvdv11RvKwpCrfdoQI&callback=initMap&v=weekly"
+      async
+    ></script>
+
+    
+    <script src="_js/script_home.js"></script>
+    <script src="_js/map.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.hero-image {
+  background-image: url("../_img/banner/Header\ Image.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.com-head-text {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.com-description-text {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.custom-input {
+  font-size: 17px;
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  border-width: 0px;
+  margin-bottom: 20px;
+  background-color: #3c3c3c;
+}
+
+.custom-btn {
+  background-color: #cc9601; /* Green */
+  border: none;
+  color: white;
+  align-items: flex-end;
+  padding: 15px 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.contact-btn {
+  align-self: center;
+}
+
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}
+/* ---------------comman close---------------------------------- */
+
+.custom-navbar {
+  background-color: black;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* ----------topic-section----------- */
+
+#topic-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+}
+
+.topic-head-text {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.topic-sub-text {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+/* ----------cyf-section----------- */
+
+#cyf-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cyf-input {
+  width: 100%;
+  height: 70%;
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.movie-card {
+  background-color: #3c3c3c;
+  margin-bottom: 30px;
+}
+.movie-image-box {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+.movie-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.movie-info-box {
+  padding: 20px;
+}
+.movie-title {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.movie-description {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+/* ----------contact-section----------- */
+
+#contact-section {
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+.contact-info {
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+.contact-label {
+  font-size: 17px;
+  width: 100%;
+}
+
+.contact-input {
+}
+.contact-checkbox {
+  width: 25px;
+  height: 25px;
+  background: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-agree {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.button-pallet {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+/* ----------footer-top-section----------- */
+
+#footer-top-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top-text {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.follow-pallet {
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.footer-bottom-text {
+  font-size: 18px;
+}
+
+.follow-us-text {
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.footer-icon {
+  margin-left: 20px;
+  margin-top: -10px;
+}
+#map {
+  height: 520px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+/* ----------footer-bottom-section----------- */
+
+#footer-bottom-section {
+}
