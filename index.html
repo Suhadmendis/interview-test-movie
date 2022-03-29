@@ -10,6 +10,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
     <link rel="stylesheet" href="_css/style_home.css">
     <link rel="stylesheet" href="_css/checkbox.css">
 
@@ -84,7 +87,11 @@
 
                 </div>
                 <div class="col-md-4">
-                    <input type="text" class="custom-input cyf-input" placeholder="Search title and add to grid"  v-model="makeQuery">
+                    <div class="input-icons">
+                        <i class="fa fa-search icon" aria-hidden="true"></i>
+                        <input type="text" class="custom-input cyf-input" placeholder="Search title and add to grid"  v-model="makeQuery">
+                    </div>
+                    
                 </div>
             </div>
 
