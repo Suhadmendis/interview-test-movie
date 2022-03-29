@@ -225,5 +225,19 @@ html {
 @media (max-width: 767px) {
   .button-pallet {
     justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .footer-top-text {
+    font-size: 22px;
+    text-align: center;
+  }
+  .follow-pallet {
+    font-size: 22px;
+    justify-content: center;
+  }
+  .footer-bottom-text {
+    font-size: 22px;
+    text-align: center;
   }
 }
