@@ -16,6 +16,11 @@ html {
   position: relative;
 }
 
+.nav-link {
+  font-weight: 400;
+  color: white !important;
+}
+
 .com-head-text {
   font-size: 40px;
   font-weight: 500;
@@ -61,8 +66,12 @@ html {
 /* ---------------comman close---------------------------------- */
 
 .custom-navbar {
-  background-color: black;
-  color: white;
+  background-color: black !important ;
+  color: white !important;
+}
+
+#navbarSupportedContent {
+  flex-direction: row-reverse;
 }
 
 .nav-link {
