@@ -221,3 +221,9 @@ html {
 
 #footer-bottom-section {
 }
+
+@media (max-width: 767px) {
+  .button-pallet {
+    justify-content: center;
+  }
+}
