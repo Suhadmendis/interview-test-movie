@@ -98,9 +98,11 @@
 
             <hr>
 
+
+
             <div class="row">
 
-                <div class="col-md-6 col-lg-4" v-for="movie in MOVIES">
+                <div class="col-md-6 col-lg-4" v-for="movie in MOVIES" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                     <div class="movie-card">
                         <div class="movie-close-btn" @click="closeMovie(movie)">
                             <img src="_img/icon/Close White.svg" alt="" >
@@ -257,7 +259,7 @@
     <script>
         AOS.init();
       </script>
-      
+
     <script src="_js/script_home.js"></script>
     <script src="_js/map.js"></script>
 
