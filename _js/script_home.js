@@ -2,7 +2,16 @@ new Vue({
     el: "#app",
     data: {
         MOVIES: [],
-        makeQuery: ''
+        CONTACT: {
+            first_name: '',
+            last_name: '',
+            email: '',
+            number: '',
+            message: '', 
+            agree: false,
+        },
+        makeQuery: '',
+        
     },
     watch: {
         makeQuery: function (keyword) {

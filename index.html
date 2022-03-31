@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="_css/style_home.css">
     <link rel="stylesheet" href="_css/checkbox.css">
 
@@ -145,32 +146,32 @@
                         
                         <div class="col-md-6">
                             <label for="" class="contact-label">First Name*</label>
-                            <input type="text" class="custom-input contact-input">
+                            <input type="text" class="custom-input contact-input" v-model="CONTACT.first_name">
                         </div>
                         <div class="col-md-6">
                             <label for="" class="contact-label">Last Name*</label>
-                            <input type="text" class="custom-input contact-input">
+                            <input type="text" class="custom-input contact-input" v-model="CONTACT.last_name">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-12">
                             <label for="" class="contact-label">Email*</label>
-                            <input type="text" class="custom-input contact-input">
+                            <input type="text" class="custom-input contact-input" v-model="CONTACT.email">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-12">
                             <label for="" class="contact-label">Telephone</label>
-                            <input type="text" class="custom-input contact-input">
+                            <input type="text" class="custom-input contact-input" v-model="CONTACT.number">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-12">
                             <label for="" class="contact-label">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" class="custom-input contact-input"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" class="custom-input contact-input" v-model="CONTACT.message"></textarea>
                             <label for="" class="contact-label">* required fields</label>
                         </div>
                     </div>
@@ -178,7 +179,7 @@
                     <div class="row">
                         <label class="container-check">
                             I agree to the <u><b>Terms & Conditions</b></u>
-                            <input type="checkbox">
+                            <input type="checkbox" v-model="CONTACT.agree">
                             <span class="checkmark"></span>
                           </label>
                       
@@ -244,12 +245,19 @@
             </div>
       </div>
 </div>
+
+
       <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClBKRU9iKfSLnXVTvdv11RvKwpCrfdoQI&callback=initMap&v=weekly"
       async
     ></script>
 
-    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      
     <script src="_js/script_home.js"></script>
     <script src="_js/map.js"></script>
 

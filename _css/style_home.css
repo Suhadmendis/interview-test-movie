@@ -203,6 +203,8 @@ html {
 }
 
 .contact-input {
+  padding-left: 10px;
+  color: white;
 }
 .contact-checkbox {
   width: 25px;
