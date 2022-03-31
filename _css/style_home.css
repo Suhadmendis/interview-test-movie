@@ -115,9 +115,23 @@ html {
 }
 
 .movie-card {
+  position: relative;
   background-color: #3c3c3c;
   margin-bottom: 30px;
 }
+
+.movie-close-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
 .movie-image-box {
   width: 100%;
   height: 600px;
