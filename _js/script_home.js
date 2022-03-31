@@ -76,6 +76,26 @@ new Vue({
             
             this.MOVIES = this.MOVIES.filter(movie => movie.id != targetMovie.id);
         },
+        contactSubmit: function () {
+            
+            const checkValidation = this.CONTACT;
+            
+            if (checkValidation.first_name == "") { alert("Please Enter Your First Name"); return; }
+            if (checkValidation.last_name == "") { alert("Please Enter Your Last Name"); return; }
+            if (checkValidation.email == "") { alert("Please Enter Your Email Address"); return; }
+            if (checkValidation.message == "") { alert("Please Enter a Message"); return; }
+
+            
+            checkValidation.first_name = "";
+            checkValidation.last_name = "";
+            checkValidation.email = "";
+            checkValidation.number = "";
+            checkValidation.message = "";
+            checkValidation.agree = false;
+
+            alert("Success");
+
+        },
         truncate: function (text, length, suffix) {
             if (text.length > length) {
                 return text.substring(0, length) + suffix;

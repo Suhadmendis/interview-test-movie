@@ -55,6 +55,7 @@ html {
 }
 .contact-btn {
   align-self: center;
+  cursor: pointer;
 }
 
 .left-text {
@@ -266,6 +267,13 @@ html {
 #footer-bottom-section {
 }
 
+
+.footer-links{
+  color: white;
+}
+a:hover {
+  color: white;
+}
 @media (max-width: 767px) {
   .button-pallet {
     justify-content: center;

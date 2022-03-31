@@ -64,7 +64,7 @@
     <div id="topic-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-7">
                     <h1 class="topic-head-text">
                         MOVIE LIBRARY
                     </h1>
@@ -190,7 +190,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="button-pallet">
-                                <button class="custom-btn contact-btn">Submit</button>
+                                <div class="custom-btn contact-btn" @click="contactSubmit()">Submit</div>
                             </div>
                         </div>
                     </div>
@@ -220,8 +220,12 @@
                         <p class="follow-us-text right-text">
                             Follow us on
                         </p>
-                        <img src="_img/icon/Twitter White.svg" alt="" class="footer-icon">
-                        <img src="_img/icon/Youtube White.svg" alt="" class="footer-icon">
+                        <a href="https://twitter.com/ebeyonds" target="_blank">
+                            <img src="_img/icon/Twitter White.svg" alt="" class="footer-icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCI5iFb13SFxbsPG0O1Tffvg/featured" target="_blank">
+                            <img src="_img/icon/Youtube White.svg" alt="" class="footer-icon">
+                        </a>
                     </div>
                   </div>
               </div>
@@ -235,12 +239,12 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p class="footer-bottom-text left-text">
-                            Copyright © 2022 IT Hotels. All rights reserved.
+                            Copyright &copy; 2022 IT Hotels. All rights reserved.
                         </p>
                     </div>
                     <div class="col-md-6">
                         <p class="footer-bottom-text right-text">
-                            Photos by <u>Felix Mooneeram</u> & <u>Serge Kutuzov</u> on <u>Unsplash</u>
+                            Photos by <a class="footer-links" href="https://felixmooneeram.co.uk/" target="_blank"><u>Felix Mooneeram</u></a> &amp; <a class="footer-links" href="https://unsplash.com/@serge_k" target="_blank"><u>Serge Kutuzov</u></a> on <a class="footer-links" href="https://unsplash.com/" target="_blank"><u>Unsplash</u></a>
                         </p>
                     </div>
                 </div>
